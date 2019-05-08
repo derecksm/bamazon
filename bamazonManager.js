@@ -1,12 +1,14 @@
 require('dotenv').config()
+const keys = require('./keys.js')
+
 const { createConnection } = require('mysql2')
 const { prompt } = require('inquirer')
 require
 const db = createConnection({
     host: 'localhost',
     port: 3306,
-    user: 'root',
-    password: 'Peanut123',
+    user: keys.user,
+    password: keys.password,
     database: 'bamazon_db'
 })
 
