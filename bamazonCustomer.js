@@ -28,7 +28,6 @@ const viewPlaylist = _ => {
                 type: 'input',
                 name: 'id',
                 message: 'What is the ID of the product you will like to buy?',
-                // choices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
             })
                 .then(answer1 => {
